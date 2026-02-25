@@ -17,7 +17,11 @@ Below is a short demo video showing one possible application: a dataset of **tim
 
 By modeling these entries as a dynamical system, you can map the actual emotional mechanics at play. The video demonstrates the core mathematical engine powering DriftDB: estimating the underlying vector field (flow) of a person's mood, discovering stable emotional regions (attractors), and simulating paths through latent space.
 
-[![Watch the demo](https://img.youtube.com/vi/taH7kT4x86c/0.jpg)](https://youtube.com/shorts/taH7kT4x86c)
+<a href="https://www.youtube.com/watch?v=taH7kT4x86c">
+  <img src="assets/demo-thumb.png" alt="Watch the demo" width="700" />
+</a>
+
+Watch the demo: https://www.youtube.com/watch?v=taH7kT4x86c
 
 While the original app was a specialized UI for emotional journaling, **DriftDB extracts this engine into a general-purpose API.** It allows you to apply this exact same flow analysis, attractor detection, and trajectory simulation to *any* time-series text or embedding data—such as LLM agent memory, user session behavior, or shifting market narratives.
 
