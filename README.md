@@ -18,7 +18,7 @@ Below is a short demo video showing one possible application: a dataset of **tim
 By modeling these entries as a dynamical system, you can map the actual emotional mechanics at play. The video demonstrates the core mathematical engine powering DriftDB: estimating the underlying vector field (flow) of a person's mood, discovering stable emotional regions (attractors), and simulating paths through latent space.
 
 <a href="https://www.youtube.com/watch?v=taH7kT4x86c">
-  <img src="assets/demo-thumb.png" alt="Watch the demo" width="700" />
+  <img src="assets/demo-thumb.png" alt="Watch the demo" width="200" />
 </a>
 
 Watch the demo: https://www.youtube.com/watch?v=taH7kT4x86c
