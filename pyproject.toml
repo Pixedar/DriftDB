@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driftdb"
+version = "0.1.2"
+description = "DriftDB — flow-native vector database for timestamped embeddings (flow fields, attractors, regimes)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "AGPL-3.0"}
+authors = [{name="DriftDB contributors"}]
+classifiers = [
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Framework :: FastAPI",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "pydantic>=2.5",
+  "numpy>=1.24",
+  "httpx>=0.25",
+  "python-dateutil>=2.8",
+  "chromadb>=0.4",
+]
+
+[project.optional-dependencies]
+embed = ["fastembed>=0.3.5"]
+dev = ["pytest>=8.0", "ruff>=0.3.0", "mypy>=1.8"]
+
+[project.scripts]
+driftdb = "driftdb.server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["driftdb*"]
+
+[tool.ruff]
+line-length = 100

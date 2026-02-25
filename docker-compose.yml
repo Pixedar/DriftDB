@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  driftdb:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DRIFTDB_CHROMA_PATH=/data/driftdb_chroma
+    volumes:
+      - driftdb_data:/data
+volumes:
+  driftdb_data:
